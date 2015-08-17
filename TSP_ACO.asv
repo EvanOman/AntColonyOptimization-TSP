@@ -59,11 +59,11 @@
 
 %    SETTING PARAMS     %
 % exploit vs explore
-q_0 = .7;
+q_0 = .5;
 numAnts = 10;
-beta = 2;
+beta = 1;
 maxIts = 1000;
-numCities = 1000;
+numCities = 100;
 Q = 1;
 rho = .6;
 
@@ -72,7 +72,7 @@ fprintf('numAnts = %d, q_0 = %3.3f, beta = %d, maxIts = %d, Q = %d, rho = %.3f\n
 
 
 % Create list of cities and plot (will simply be a circle for now)
-cities = genCities(numCities, 'circ');
+%cities = genCities(numCities, 'rand');
 figure(1);
 plot([cities(:).x],[cities(:).y], 'bo-')
 
@@ -148,12 +148,12 @@ while numIts < maxIts;
 		
 		% Now we need to update tau with the pheromones left by this ant:
 		toCities = circshift(path, [0,1]);
-% 		tau(sub2ind([numCities numCities], path, toCities)) = tau(sub2ind([numCities numCities], path, toCities)) +  Q / score;
+		tau(sub2ind([numCities numCities], path, toCities)) = tau(sub2ind([numCities numCities], path, toCities)) +  Q / score;
 		
 		for ind = 1:numCities
-			fromCity = path(ind);
 			toCity = toCities(ind);
-			tau(fromCity, toCity) = tau(fromCity, toCity) + Q / score;
+			toCity = toCities(ind);
+			tau(path(ind), toCities(ind)) = 
 		end
 	end
 	

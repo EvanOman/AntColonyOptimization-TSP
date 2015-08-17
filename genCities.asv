@@ -1,0 +1,3 @@
+function cities = genCities(numCities, type)
+
+end
