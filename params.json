@@ -1,6 +1,0 @@
-{
-  "name": "Antcolonyoptimization-tsp",
-  "tagline": "An Ant Colony Optimization algorithm for the Traveling Salesman Problem",
-  "body": "# Ant Colony Optimization For the Travelling Salesman Problem\r\n\r\nThis repository contains a working Matlab implementation of the Ant Colony Optimization algorithm for the Travelling Salesman Problem. The Matlab scripts generate some number of cities in a cirular or random distribution, and then run some number of iterations to find the best path through those cities.\r\n\r\n## Circular City Distribution\r\n\r\nHere are some figures showing the algorithm performance for a circular arrangement of cities (this is more of a sanity check, this arrangement should be easy to solve).\r\n\r\n![Circular City Initial](./fig/circ_init.jpg)\r\n\r\n![Circular City Solution](./fig/circ_sol.jpg)\r\n\r\n![Circular City History](./fig/circ_hist.jpg)\r\n\r\n## Random City Distribution\r\n\r\nHere are some figures showing the algorithm performance for a random city distribution:\r\n\r\n![Random City Initial](./fig/rand_init.jpg)\r\n\r\n![Random City Solution](./fig/rand_sol.jpg)\r\n\r\n![Random City History](./fig/rand_hist.jpg)\r\n\r\n",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}
