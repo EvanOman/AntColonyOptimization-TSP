@@ -1,5 +1,10 @@
 %                               Algorithm Comments
 
+% The paper backing this implementation can be found here:
+% Title:   Scheduling and Rescheduling of Imaging Satellite Based on Ant Colony Optimization
+% Authors: Yuqing LI, Rixin WANG, Minqiang XU
+% Link:    https://pdfs.semanticscholar.org/5dd1/a474d9fb43a779a05cc8b43548c0faf0be0e.pdf
+
 % Here is where we will implement the ant colony algorithm
 % First we will identify all of the actors:
 %    - k    : an ant
